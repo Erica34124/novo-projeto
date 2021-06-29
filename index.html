@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <title>Calculadora.js</title>
+</head>
+
+<body class="container">
+    <header class="cabeca " id="cabeca">
+        <h1>Controle de acesso</h1>
+        
+    </header>
+    <nav class="navegar" id="navegar">
+        <ul class="ol " >
+            <li><a href="teste.html">Acesso ao teste</a></li>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+        </ul>
+
+    </nav>
+    <aside class="aside" id="aside">
+        <h2>Cadastro de Sites</h2>
+        <Como aprender programardl>
+            <dt>Como aprender programar</dt>
+            <dd>Tem que trabalhar bastante e aprender programar</dd>
+
+            <dt>Como ficar muitoo rico</dt>
+            <dd>Tem que trabalhar bastante</dd>
+            </dl>
+
+    </aside>
+
+    <main class="principal" id="principal">
+        <article class="artigo1" id="artigo1">
+            <h2>Conheça a Capgemini</h2>
+            <!-- <video width="550px" height="auto"><source src="imagens/Apresentação Ambev.mp4" type="video/mp4" controls></video>-->
+            <!-- <video src=”imagens/Apresentação Ambev.mp4″ width=”550″ height=”auto″ poster=”teste.jpg” controls> </video>-->
+            <video width="550px" height="auto">
+                <source src="imagens/Apresentação Ambev.mp4" type="video/mp4" control>
+
+
+
+
+                 </article>
+        <article class="artigo2" id="artigo2">
+            <h2>Cultura</h2>
+            <ol>
+                <li>itens</li>
+                <li>itens</li>
+                <li>itens</li>
+                <li>itens</li>
+            </ol>
+        </article> 
+
+    </main>
+    <section class="secao" id="secao">
+        <h2>seção</h2>
+        <form action="script.js" method="GET" id="all" class="all">
+            <fieldset>
+                <legend>
+                    <h2>Cadastro de aunucios</h2>
+                </legend>
+
+                <label for="anuncio">
+                    <h4>Nome do anuncio:</h4>
+                </label>
+                <input type="tel" name="anuncio" id="anuncio" class="anuncio">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="enviar()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                    <h3 id="anunciar"></h3>
+
+                <label for="nome">
+                    <h4>Nome do cliente:</h4>
+                </label>
+                <input type="tel" name="nome" id="nome" class="nome">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="enviar()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                    <h3 id="nomeR"></h3>
+
+                <label for="dataI">
+                    <h4>Data de inicio:</h4>
+                </label>
+                <input type="date" name="dataI" id="dataI" class="dataI">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="enviar()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                        <h3 id="inicio"></h3>
+
+                <label for="dataF">
+                    <h4>data do fim:</h4>
+                </label>
+                <input type="date" name="dataF" id="dataF" class="dataF">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="enviar()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                        <h3 id="fim"></h3>
+                <label for="grana">
+                    <h4>Investimento:</h4>
+                </label>
+                <input type="number" name="grana" id="grana" class="grana">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="enviar()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                  
+                <h3 id="exporAnuncio"></h3>
+
+
+            </fieldset>
+
+        </form>
+
+
+
+
+
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>
+                    <h2>Investimento</h2>
+                </legend>
+
+                <label for="invest1">
+                    <h4>Quanto pretende investir em divulgação dos sites?</h4>
+                </label>
+                <input type="number" name="investimento" id="invest1" class="invest1">
+                <!-- <input type="submit" onclick="receber()" value="Enviar">-->
+                <input type="reset" onclick="chamada()" value="Enviar">
+                <label><span>
+                        <h1>Retorno</h1>
+                    </span></label>
+
+                <h3 id="valorDigitado"></h3>
+
+               
+            </fieldset>
+
+        </form>
+
+    </section>
+
+
+    <footer class="rodape" id="rodape">
+        <h2>Site by Érica</h2>
+
+    </footer>
+    <script>
+
+
+        const form = document.getElementById('invest1');
+        console.log(form.elements)
+        function handleKeyUp(event) {
+            console.log(event.target.value);
+            return ('teste valor', +form.value)
+        }
+        form.addEventListener('change', handleKeyUp);
+
+        console.log('teste form', +form.value)
+
+
+
+        function receber() {
+            //let formulario = document.getElementById('invest1').value;
+            // let formulario = form.addEventListener('change', handleKeyUp);
+
+            formulario = (+form.value);
+            let entrada = formulario;
+            console.log('O que esta vindo', entrada)
+            return entrada;
+
+        }
+        console.log('testando receber', receber());
+
+        function calc() {
+
+            entradaFunc = receber()
+            const pessoasPorReal = entradaFunc * 30;
+            const clicam = pessoasPorReal * 0.12;
+            const compartilham = (clicam * (3 / 20));
+            const visualiza = compartilham * 40;
+            totalVisualizado = pessoasPorReal + visualiza;
+
+            return totalVisualizado
+
+        }
+        function chamada() {
+            document.getElementById('valorDigitado').innerHTML = `O total de pessoas que viram o mesmo anuncio a cada um real investido foi: ${calc()} pessoas.`;
+        }
+
+
+        function ListaAnuncio() {
+            this.nome = 'doAnuncio';
+            this.cliente = 'nomeCliente';
+            this.inicio = 'dataInicio';
+            this.fim = 'dataFim';
+            this.investimento = 0;
+        }
+ /*======================================================================================================*/
+        nomesAnuncios = []
+
+        let caju =document.getElementsByName('anuncio').value;
+
+        caju = new ListaAnuncio;
+        console.log('teste caju',caju);
+
+
+
+
+
+
+        function enviar() {
+            let inserirAnuncio = document.getElementsByName('anuncio');
+            if (!!inserirAnuncio) {
+                nomesAnuncios.push(inserirAnuncio.value)
+                console.log('nomesAnuncios',nomesAnuncios)
+            }
+            else {
+                console.log('inserir valor')
+            }
+            //console.log('itens da lista', nomesAnuncios)
+
+/*======================================================================================================*/
+
+            const anun = document.getElementById('anuncio');
+            const nome = document.getElementById('nome');
+            const dataI = document.getElementById('dataI');
+            const dataF = document.getElementById('dataF');
+            const grana = document.getElementById('grana');
+            //console.log(forma.elements)
+            function handleKeyUp(event) {
+                console.log(event.target.value);
+                return ('teste valor', event.target.value)
+            }
+            //console.log(forma)
+            anun.addEventListener('change', handleKeyUp);
+            nomesAnuncios.push(anun.value)
+            console.log('teste forma teste', nomesAnuncios)
+            console.log('ver quantidade da lista', nomesAnuncios.length)
+            nomesAnuncios[0] = new ListaAnuncio()
+            nomesAnuncios[0].cliente = nome.value;
+            nomesAnuncios[0].inicio = dataI.value;
+            nomesAnuncios[0].fim = dataF.value;
+            nomesAnuncios[0].investimento = grana.value;
+
+            console.log(nomesAnuncios[0])
+        }
+        console.log('ver quantidade da lista', nomesAnuncios.length)
+    </script>
+
+
+
+
+
+</body>
+
+</html>
