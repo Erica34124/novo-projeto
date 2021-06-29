@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 ul li a {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Courier New", Courier, monospace;
+    color: #222222;
+  }
+  ul ol li {
+  list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .cabeca {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background: #122ab2;
+    color: rgb(229, 231, 236);
+  }
+  .aside dt {
+    font-size: bold;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: ipx solid #ccc;
+  }
+  ul{
+    list-style: none;
+  }
+  .navegar {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    background: #2c70ff;
+    flex-wrap: wrap;
+     
+  }
+  ul li{
+    float: left;
+    max-width: 960px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 20px 20px;
+    justify-content: space-between;
+    font-size: 1.25em;
+    font-weight: bold;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .aside {
+    max-width: 960px;
+    flex: content;
+    border-bottom: 2px solid #122ab2;
+    border-top: 2px solid #122ab2;
+    padding: 20px 10px;
+    color: #122ab2;
+    padding: 40px 10px;
+    margin: 20px auto;
+    text-justify: inherit;
+  }
+  .aside  h2{
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0px auto;
+    padding: 10px 40px;
+    color: #122ab2;
+  }
+  .principal {
+    max-width: 960px;
+    height: 500px;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+    padding: 40px 10px;
+    margin: 20px auto;
+    border-bottom: 2px solid #122ab2;
+    border-top: 2px solid #122ab2;
+  }
+  .artigo1 {
+    float: left;
+    max-width: 600px;
+    height: 400px;
+    flex: content;
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+    color: #122ab2;
+    padding: 40px 10px;
+    margin: 20px auto;
+    text-justify: inherit;
+  
+  }
+  .artigo1 h2{
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0px auto;
+  padding: 10px 40px;
+  color: #122ab2;
+  
+  }
+  .artigo2 h2{
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0px auto;
+    padding: 10px 40px;
+    color: #122ab2;
+  }
+  .artigo2 ol li{
+    text-align: center;
+    font-size: 1.25rem;
+    color: #122ab2;
+  }
+  
+  .artigo2 {
+    float: left;
+  
+    max-width: 300px;
+    flex-wrap: nowrap;
+    height: 400px;
+    padding: 40px 10px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  .secao {
+    max-width: 960px;
+    height: 800px;
+    background: rgb(166, 205, 238);
+    padding: 20px 40px;
+    border: 2px solid #122ab2;
+    padding: 40px 10px;
+    margin: 20px auto;
+  }
+  .rodape {
+    max-width: 960px;
+    height: 80px;
+    text-align: right;
+    padding: 40px 60px;
+    margin: 20px auto;
+    background: #122ab2;
+    color: rgb(229, 231, 236);
+  }
+  
+  .div {
+    width: 1200px;
+    height: 5px;
+    background: brown;
+  }
+  fieldset {
+    padding: 10px 20px 20px 10px;
+  }
+  
