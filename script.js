@@ -50,3 +50,21 @@ var meuCarro = new Object();
 meuCarro.fabricacao = "Ford";
 meuCarro.modelo = "Mustang";
 meuCarro.ano = 1969;*/
+
+//teste get
+
+const dadoAnuncio = document.getElementsByClassName('anuncio');
+console.log(dadoAnuncio)
+const dadoNome = document.getElementById('nome');
+const dadoData1 = document.getElementById('dataI');
+const dadoData2 = document.getElementById('dataF');
+const dadoGrana = document.getElementById('grana');
+
+console.log("Que poha é essa",document.getElementsByClassName("dadoAnuncio").innerText = dadoAnuncio);
+
+
+//listas dados Anunciante
+const listaAnunciantes =[];
+listaAnunciantes.push(document.getElementsByClassName('anuncio').value)
+
+console.log("lista de armazenamento", listaAnunciantes[0])

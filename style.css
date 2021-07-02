@@ -68,6 +68,7 @@
     font-weight: bold;
     flex-wrap: wrap;
     align-items: center;
+    color: #122ab2;
   }
   
   .aside {
@@ -115,7 +116,7 @@
   font-size: 2rem;
   line-height: 1;
   margin: 0px auto;
-  padding: 10px 40px;
+  padding: 5px 40px;
   color: #122ab2;
   
   }

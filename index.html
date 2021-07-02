@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="class.js"></script>
 
 
     <title>Calculadora.js</title>
@@ -19,21 +20,27 @@
     </header>
     <nav class="navegar" id="navegar">
         <ul class="ol " >
-            <li><a href="teste.html">Acesso ao teste</a></li>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
+            <li> <a href="#">Pagina inicial</a></li>
+            <li><a href="relatorio.html">Relatório</a></li>
+            <li><a href="#artigo1">Capgemini</a></li>
+            <li><a href="#all" >Cadastro</a></li>
         </ul>
 
     </nav>
     <aside class="aside" id="aside">
         <h2>Cadastro de Sites</h2>
-        <Como aprender programardl>
-            <dt>Como aprender programar</dt>
-            <dd>Tem que trabalhar bastante e aprender programar</dd>
-
-            <dt>Como ficar muitoo rico</dt>
-            <dd>Tem que trabalhar bastante</dd>
+            <dl>
+            <dt><h4>Como cadastrar?</h4></dt>
+            <br>
+            <dd>Nesta pagina inicial você poderá inserir os valores no formulário <br>
+            correspondente, o sistema irá armazenar as informações em listas para posterior verificação
+            </dd>
+            <br>
+            <dt><h4>Como obter o retorno de visualizações do valor investido?</h4></dt>
+            <br>
+            <dd>No ultimo campo do formulário voce poderá inserir o valor do investimento e o sistema <br>
+            Retornará a quantidade total de visualizações ( tanto primárias com as oriundas de compartilhamentos).
+            </dd>
             </dl>
 
     </aside>
@@ -43,8 +50,9 @@
             <h2>Conheça a Capgemini</h2>
             <!-- <video width="550px" height="auto"><source src="imagens/Apresentação Ambev.mp4" type="video/mp4" controls></video>-->
             <!-- <video src=”imagens/Apresentação Ambev.mp4″ width=”550″ height=”auto″ poster=”teste.jpg” controls> </video>-->
-            <video width="550px" height="auto">
-                <source src="imagens/Apresentação Ambev.mp4" type="video/mp4" control>
+
+        
+            <iframe  width="425" height="344" margim-botton="10px" src="https://www.youtube.com/watch?v=fynzG0275cU&t=23s" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -52,12 +60,12 @@
                  </article>
         <article class="artigo2" id="artigo2">
             <h2>Cultura</h2>
-            <ol>
-                <li>itens</li>
-                <li>itens</li>
-                <li>itens</li>
-                <li>itens</li>
-            </ol>
+            <ul>
+                <li>Honestidade</li>
+                <li>Aprendizado contínuo</li>
+                <li>Diversidade</li>
+                <li>Inovação.</li>
+            <ul>
         </article> 
 
     </main>
@@ -67,14 +75,21 @@
             <fieldset>
                 <legend>
                     <h2>Cadastro de aunucios</h2>
+                   <label for="qtd"> <h3>Quantos anuncios deseja cadastrar? </h3></label>
+                   <input type="tel" name="qtd" id="qtd" class="qtd" >
+                   <input type="button" onclick="erro()" value="Enviar">
+                   <label><span>
+                           <h1>Retorno</h1>
+                     
+                   <h3 id="exporAnuncio"></h3>
                 </legend>
 
                 <label for="anuncio">
                     <h4>Nome do anuncio:</h4>
                 </label>
-                <input type="tel" name="anuncio" id="anuncio" class="anuncio">
+                <input type="tel" name="anuncio" id="anuncio" class="anuncio" >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="reset" onclick="enviar()" value="Enviar">
+               
                 <label><span>
                         <h1>Retorno</h1>
                     <h3 id="anunciar"></h3>
@@ -82,9 +97,9 @@
                 <label for="nome">
                     <h4>Nome do cliente:</h4>
                 </label>
-                <input type="tel" name="nome" id="nome" class="nome">
+                <input type="tel" name="nome" id="nome" class="nome" >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="reset" onclick="enviar()" value="Enviar">
+                
                 <label><span>
                         <h1>Retorno</h1>
                     <h3 id="nomeR"></h3>
@@ -92,9 +107,9 @@
                 <label for="dataI">
                     <h4>Data de inicio:</h4>
                 </label>
-                <input type="date" name="dataI" id="dataI" class="dataI">
+                <input type="date" name="dataI" id="dataI" class="dataI" >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="reset" onclick="enviar()" value="Enviar">
+           
                 <label><span>
                         <h1>Retorno</h1>
                         <h3 id="inicio"></h3>
@@ -102,18 +117,18 @@
                 <label for="dataF">
                     <h4>data do fim:</h4>
                 </label>
-                <input type="date" name="dataF" id="dataF" class="dataF">
+                <input type="date" name="dataF" id="dataF" class="dataF" >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="reset" onclick="enviar()" value="Enviar">
+               
                 <label><span>
                         <h1>Retorno</h1>
                         <h3 id="fim"></h3>
                 <label for="grana">
                     <h4>Investimento:</h4>
                 </label>
-                <input type="number" name="grana" id="grana" class="grana">
+                <input type="number" name="grana" id="grana" class="grana" >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="reset" onclick="enviar()" value="Enviar">
+                <input type="button" onclick="enviar()" value="Enviar">
                 <label><span>
                         <h1>Retorno</h1>
                   
@@ -214,7 +229,16 @@
 
         let caju =document.getElementsByName('anuncio').value;
 
+        nomesAnuncios.push(caju)
+        console.log("nomesAnuncios",nomesAnuncios)
+
         caju = new ListaAnuncio;
+        caju.entrada=document.getElementsByName('anuncio').value;
+        caju.nome =document.getElementsByName('anuncio').value;
+        caju.cliente =document.getElementsByName('nome').value;
+        caju.inicio =document.getElementsByName('dataI').value;
+        caju.fim=document.getElementsByName('dataF').value;
+        caju.investimento =document.getElementsByName('invest1').value;
         console.log('teste caju',caju);
 
 
@@ -234,7 +258,7 @@
             //console.log('itens da lista', nomesAnuncios)
 
 /*======================================================================================================*/
-
+            const entrada =document.getElementById('anuncio');
             const anun = document.getElementById('anuncio');
             const nome = document.getElementById('nome');
             const dataI = document.getElementById('dataI');
@@ -251,6 +275,7 @@
             console.log('teste forma teste', nomesAnuncios)
             console.log('ver quantidade da lista', nomesAnuncios.length)
             nomesAnuncios[0] = new ListaAnuncio()
+            nomesAnuncios[0].nome = anun.value;
             nomesAnuncios[0].cliente = nome.value;
             nomesAnuncios[0].inicio = dataI.value;
             nomesAnuncios[0].fim = dataF.value;
@@ -258,7 +283,8 @@
 
             console.log(nomesAnuncios[0])
         }
-        console.log('ver quantidade da lista', nomesAnuncios.length)
+        nomesAnuncios.push(nomesAnuncios[0])
+        console.log('ver quantidade da lista', nomesAnuncios)
     </script>
 
 
