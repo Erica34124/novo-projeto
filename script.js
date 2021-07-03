@@ -14,7 +14,7 @@ function anunciosVisualizados(){
     return visualizado*40;
 }
 
-//console.log(anunciosVisualizados())
+console.log(anunciosVisualizados())
 
 
 
