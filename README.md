@@ -36,32 +36,30 @@
         <h1>Trabalhos voluntários: Casa de apoio fonte da vida, casa Maria de Nazaré.</h1>
     </main>
     <aside class="aside" id="aside">
-        <h2>Cadastro de Sites</h2>
-            <dl><h2>Relátório de acessos</h2> </dl>
+        <h2>Como utilizar o site</h2>
+            <dl><h2>Instruções:</h2> </dl>
             <br>
-            <dt><h4>Nome do Anuncio:</h4> </dt>
-            <dd><div class="dadoAnuncios" id="dadoAnuncios" dadoAnuncios>teste</div></dd>
+            <dt><h4>Pagina inicial (index.html)</h4> </dt>
+            <dd>Nesta sessão vamos explorar o input de investimento, ao digitar o valor e clicar em enviar<br>
+            O span retornará a quantidade final de acessos.<br> Em inspecionar poderá ser visualizado o loop de informações e seu sistema de armazenamento do dados.</dd>
             <br>
-            <dt><h4>Nome do Anunciante:</h4> </dt>
-            <dd><span class="dadoNome" id="dadoNome" data-list-C=""></span></dd>
+            <dt><h4>Relatório (relatorio.html)</h4> </dt>
+            <dd>Neste campo objetivava exteriorizar os dados cadastrados na pagina anterior</dd>
             <br>
-            <dt><h4>Valor investido por dia:</h4> </dt>
-            <dd><span class="dadoGrana" id="dadoGrana" data-list-G=""></span></dd>
+            <dt><h4>Sistema de cadastro (sistemaCadastro.py)</h4> </dt>
+            <dd>Nesta seção podemos cadastrar via terminal os dados que serão retornados em informações compiladas. </dd>
             <br>
-            <dt><h4>Nome Total do valor por dias investidos:</h4> </dt>
-            <dd><span>teste</span></dd>
+            <dt><h4></h4> </dt>
+            <dd><span></span></dd>
             <br>
-            <dt><h4> Quantidade de visualizações:</h4> </dt>
-            <dd><span>teste</span></dd>
+            <dt> <h4></h4> </dt>
+            <dd><span></span></dd>
             <br>
-            <dt> <h4>Quantidade de clicks:</h4> </dt>
-            <dd><span>teste</span></dd>
+            <dt><h4></h4> </dt>
+            <dd><span></span></dd>
             <br>
-            <dt><h4>Quantidade de compartilhamentos:</h4> </dt>
-            <dd><span>teste</span></dd>
-            <br>
-            <dt><h4>Resumo de visualizações (original e compartilhados):</h4> </dt>
-            <dd><span>teste</span></dd>
+            <dt><h4></h4> </dt>
+            <dd><span></span></dd>
             <br>
             </dl>
     </aside>
