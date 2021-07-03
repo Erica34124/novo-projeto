@@ -25,7 +25,7 @@ function handleKeyUp(event) {
     return ('teste valor', enviaDados)
 }
  enviaDados.addEventListener('change', handleKeyUp);
-*/
+
 
 nomesAnuncios =[]
 let inserirAnuncio = document.getElementsByClassName('anuncio').value;
@@ -36,6 +36,7 @@ else{
     console.log('inserir valor')
 }
 console.log('itens da lista',nomesAnuncios)
+*/
    /* anuncio= new ListaAnuncio();
     anuncio.cliente =document.getElementById('anuncio');
     anuncio.inicio =document.getElementById('anuncio');
@@ -53,18 +54,36 @@ meuCarro.ano = 1969;*/
 
 //teste get
 
-const dadoAnuncio = document.getElementsByClassName('anuncio');
-console.log(dadoAnuncio)
-const dadoNome = document.getElementById('nome');
-const dadoData1 = document.getElementById('dataI');
-const dadoData2 = document.getElementById('dataF');
-const dadoGrana = document.getElementById('grana');
+/*const anun1 = document.getElementsByClassName('[anuncio]');
+console.log(anun1)
+const dadoAnuncios =document.getElementsByClassName("[data-list-anuncio]");
+const dadoNome = document.querySelector("[anuncio]");
+const dadoData1 = document.getElementsByClassName('[data-list-dataI]');
+const dadoData2 = document.getElementsByClassName('[data-list-dataF]');
+const dadoGrana = document.getElementsByClassName('[data-list-grana]');
 
-console.log("Que poha é essa",document.getElementsByClassName("dadoAnuncio").innerText = dadoAnuncio);
-
-
-//listas dados Anunciante
+console.log("Que poha é essa",document.getElementsByClassName("[dadoAnuncio]").innerText)
 const listaAnunciantes =[];
-listaAnunciantes.push(document.getElementsByClassName('anuncio').value)
+listaAnunciantes.push(document.querySelector('[cliente]'))
 
-console.log("lista de armazenamento", listaAnunciantes[0])
+console.log("lista de armazenamento", dadoNome)
+
+
+function handleKeyUp(event) {
+    console.log(event.target.value);
+    return ('teste valor', event.target.value)
+}
+//console.log(forma)
+anun1.addEventListener('change', handleKeyUp);
+nomesAnuncios.push(anun1.value)
+console.log('teste forma teste', nomesAnuncios)
+console.log('ver quantidade da lista', nomesAnuncios.length)
+
+let nome = dadoAnuncios.value;
+let cliente = dadoNome.value;
+let inicio = dadoData1.value;
+let fim = dadoData2.value;
+let investimento = dadoGrana.value;
+
+console.log(nome)
+*/

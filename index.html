@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="class.js"></script>
+    
 
 
     <title>Calculadora.js</title>
@@ -71,13 +71,13 @@
     </main>
     <section class="secao" id="secao">
         <h2>seção</h2>
-        <form action="script.js" method="GET" id="all" class="all">
+        <form action="script.js" method="GET" id="all" class="all" all>
             <fieldset>
                 <legend>
                     <h2>Cadastro de aunucios</h2>
                    <label for="qtd"> <h3>Quantos anuncios deseja cadastrar? </h3></label>
-                   <input type="tel" name="qtd" id="qtd" class="qtd" >
-                   <input type="button" onclick="erro()" value="Enviar">
+                   <input type="tel" name="qtd" id="qtd" class="qtd" qtd>
+                   <input type="button" onclick="render()" value="Enviar">
                    <label><span>
                            <h1>Retorno</h1>
                      
@@ -87,17 +87,17 @@
                 <label for="anuncio">
                     <h4>Nome do anuncio:</h4>
                 </label>
-                <input type="tel" name="anuncio" id="anuncio" class="anuncio" >
+                <input type="tel" name="anuncio" id="anuncio" class="anuncio" anuncio>
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
                
                 <label><span>
                         <h1>Retorno</h1>
-                    <h3 id="anunciar"></h3>
+                    <h3 id="anunciar" anunciar></h3>
 
                 <label for="nome">
                     <h4>Nome do cliente:</h4>
                 </label>
-                <input type="tel" name="nome" id="nome" class="nome" >
+                <input type="tel" name="nome" id="nome" class="nome" data-list-nome >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
                 
                 <label><span>
@@ -107,7 +107,7 @@
                 <label for="dataI">
                     <h4>Data de inicio:</h4>
                 </label>
-                <input type="date" name="dataI" id="dataI" class="dataI" >
+                <input type="date" name="dataI" id="dataI" class="dataI" data-list-dataI >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
            
                 <label><span>
@@ -117,7 +117,7 @@
                 <label for="dataF">
                     <h4>data do fim:</h4>
                 </label>
-                <input type="date" name="dataF" id="dataF" class="dataF" >
+                <input type="date" name="dataF" id="dataF" class="dataF" data-list-dataf >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
                
                 <label><span>
@@ -126,9 +126,9 @@
                 <label for="grana">
                     <h4>Investimento:</h4>
                 </label>
-                <input type="number" name="grana" id="grana" class="grana" >
+                <input type="number" name="grana" id="grana" class="grana"data-list-grana >
                 <!-- <input type="submit" onclick="receber()" value="Enviar">-->
-                <input type="button" onclick="enviar()" value="Enviar">
+                <input type="button" onclick="render()" value="Enviar" qtd1>
                 <label><span>
                         <h1>Retorno</h1>
                   
@@ -226,15 +226,20 @@
         }
  /*======================================================================================================*/
         nomesAnuncios = []
+        let aAnuncios =[];
+        let aNomes =[];
+        let aData1 =[];
+        let aData2 =[];
+        let aInvestimento =[];
 
         let caju =document.getElementsByName('anuncio').value;
 
-        nomesAnuncios.push(caju)
+        
         console.log("nomesAnuncios",nomesAnuncios)
 
         caju = new ListaAnuncio;
-        caju.entrada=document.getElementsByName('anuncio').value;
-        caju.nome =document.getElementsByName('anuncio').value;
+        caju.entrada=document.getElementsByName('[anuncio]').value;
+        caju.nome =document.getElementsByName('[anuncio]').value;
         caju.cliente =document.getElementsByName('nome').value;
         caju.inicio =document.getElementsByName('dataI').value;
         caju.fim=document.getElementsByName('dataF').value;
@@ -274,23 +279,39 @@
             nomesAnuncios.push(anun.value)
             console.log('teste forma teste', nomesAnuncios)
             console.log('ver quantidade da lista', nomesAnuncios.length)
-            nomesAnuncios[0] = new ListaAnuncio()
-            nomesAnuncios[0].nome = anun.value;
-            nomesAnuncios[0].cliente = nome.value;
-            nomesAnuncios[0].inicio = dataI.value;
-            nomesAnuncios[0].fim = dataF.value;
-            nomesAnuncios[0].investimento = grana.value;
+            //nomesAnuncios[0] = new ListaAnuncio()
+            let nome1 = anun.value;
+            let cliente = nome.value;
+            let inicio = dataI.value;
+            let fim = dataF.value;
+            let investimento = grana.value;
 
-            console.log(nomesAnuncios[0])
+        
+        
+            
+            aAnuncios.push(nome1);
+            aNomes.push(cliente);
+            aData1.push(inicio);
+            aData2.push(fim);
+            aInvestimento.push(investimento);
+            console.log('ver quantidade da lista', nome.value)
+            ListaAnuncios.push(aAnuncio)
+            ListaAnuncio.push(aNomes)
+            ListaAnuncio.push(aData1)
+            ListaAnuncio.push(aData2)
+            ListaAnuncio.push(aInvestimento)
+            
+        
         }
-        nomesAnuncios.push(nomesAnuncios[0])
-        console.log('ver quantidade da lista', nomesAnuncios)
+        //puxando dados
+        console.log(ListaAnuncio)
+        
     </script>
 
 
 
 
-
+<script type="text/javascript" src="class.js"></script>
 </body>
 
 </html>

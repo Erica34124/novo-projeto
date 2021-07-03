@@ -33,3 +33,56 @@ section.scrollIntoView({
         behavior:'smooth',
         block: 'start',
 });}
+//enviando as listas para relatório
+
+/*nomesAnuncios = []
+let aAnuncio =[];
+let aNomes =[];
+let aData1 =[];
+let aData2 =[];
+let aInvestimento =[];*/
+
+//Puxa dados
+
+
+const dataDiv = document.querySelector("[anunciar]");
+console.log("testeerica1",dataDiv)
+const dataForm = document.querySelector("[all]");
+console.log("testeerica2",dataForm)
+const dataInput = document.querySelector("[qtd1]");
+console.log("testeerica3",dataInput)
+
+let array = []
+
+dataForm.addEventListener('submit', function(event){
+    event.preventDefault()
+    const listNome = dataInput.value
+    console.log(listNome)
+    if (listNome === null || listNome === "") return
+    const list = createList(listNome)
+    dataInput.value = null
+    array.push(list)
+    render()
+})
+
+function createList(nome){
+    return{id: Date.now().toString(), name: nome}
+}
+
+function render(){
+    clearElement(dataDiv)
+    array.forEach(function(array){
+        const item = document.createElement('li')
+        item.classList.add("item")
+        item.innerText=array.name
+        console.log(item)
+        dataDiv.appendChild(item)
+    })
+}
+
+function clearElement(elemento){
+    while(elemento.firstChild){
+        elemento.removeChild(elemento.firstChild)
+    }
+}
+console.log("Socorro",render())
